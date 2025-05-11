@@ -169,7 +169,7 @@ export default function CurrencyConverter() {
       </div>
 
       {isLoading && (
-        <div className="text-center mt-4 text-lg font-semibold text-blue-500">
+        <div className="text-center mt-4 text-lg font-semibold text-yellow-600">
           Conversion en cours...
         </div>
       )}
@@ -177,7 +177,7 @@ export default function CurrencyConverter() {
       {result !== null && !isLoading && !error && (
         <div className="text-center mt-4 text-lg font-semibold">
           {amount} {fromCurrency} ={" "}
-          <span className="text-green-700">
+          <span className="text-yellow-600">
             {result.toFixed(2)} {toCurrency}
           </span>
         </div>
